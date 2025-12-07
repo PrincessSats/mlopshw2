@@ -1,0 +1,4 @@
+Dockerfile
+.git
+models/*.ipynb
+train_model.py

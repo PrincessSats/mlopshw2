@@ -1,0 +1,10 @@
+grpcio==1.76.0
+grpcio-reflection==1.76.0
+grpcio-tools==1.76.0
+joblib==1.5.2
+numpy==2.0.2
+protobuf==6.33.2
+scikit-learn==1.6.1
+scipy==1.13.1
+threadpoolctl==3.6.0
+typing_extensions==4.15.0
