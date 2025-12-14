@@ -41,4 +41,5 @@ jobs:
           curl -X POST https://api.cloudprovider/deploy \
             -H "Authorization: Bearer ${{ secrets.CLOUD_TOKEN }}" \
             -H "Content-Type: application/json" \
-            -d "{\"image\":\"${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}\",\"version\":\"${{ secrets.MODEL_VERSION }}\"}"
+            -d "{\"image\":\"${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}\",\"version\":\"${{ secrets.MODEL_VERSION }}\"}" \
+          || echo "Mock deploy failed (expected for homework placeholder URL)."
