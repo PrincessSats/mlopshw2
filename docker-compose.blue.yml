@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  ml-service:
+    image: ml-service:v1.0.0
+    container_name: ml-service-blue
+    environment:
+      - MODEL_VERSION=v1.0.0
+      - MODEL_PATH=/app/models/model.pkl
+    ports:
+      - "8080:8080"
